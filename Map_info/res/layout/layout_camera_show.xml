@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_layout_show"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+    android:background="@color/userlogin_bk" >
+
+    <ImageView
+        android:id="@+id/camera_show_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/b" />
+
+    <RelativeLayout
+        android:id="@+id/b"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ui8_wg_bg_dialog_btn2_n"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/camera_show_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/camera_show_save"
+            android:background="@drawable/ui8_wg_bg_dialog_btn_blue"
+            android:padding="10dp"
+            android:text="放弃"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/camera_show_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ui8_wg_bg_dialog_btn_blue"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="存储"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

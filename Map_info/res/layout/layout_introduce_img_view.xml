@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.mapbar.info.collection.widget.ScrollLayout
+        android:id="@+id/introduce_scrolllayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical" >
+    </com.mapbar.info.collection.widget.ScrollLayout>
+
+    <TextView
+        android:id="@+id/introduce_help_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk" >
+
+    <include
+        android:id="@+id/my_task_title"
+        layout="@layout/layout_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_task_title"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/my_task_wait"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/filter_btn_bg_left"
+            android:padding="10dp"
+            android:text="待提交"
+            android:textColor="@color/text_gray" />
+
+        <Button
+            android:id="@+id/my_task_old"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/filter_btn_bg_middle"
+            android:padding="10dp"
+            android:text="已提交"
+            android:textColor="@color/text_gray" />
+
+        <Button
+            android:id="@+id/my_task_lose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/filter_btn_bg_right"
+            android:padding="10dp"
+            android:text="已过期"
+            android:textColor="@color/text_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_task_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/my_task_text"
+        android:background="@color/list_driv" />
+
+
+    <com.mapbar.info.collection.widget.MExpandListView
+        android:id="@+id/my_task_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn"
+        android:layout_below="@+id/my_task_text"
+        android:cacheColorHint="@null"
+        android:childDivider="@color/list_driv"
+        android:divider="@color/list_driv"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null" />
+
+    <com.mapbar.info.collection.widget.MExpandListView
+        android:id="@+id/my_task_list_old"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn"
+        android:layout_below="@+id/my_task_text"
+        android:cacheColorHint="@null"
+        android:childDivider="@color/list_driv"
+        android:divider="@color/list_driv"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:visibility="gone" />
+
+    <com.mapbar.info.collection.widget.MExpandListView
+        android:id="@+id/my_task_list_lost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn"
+        android:layout_below="@+id/my_task_text"
+        android:cacheColorHint="@null"
+        android:childDivider="@color/list_driv"
+        android:divider="@color/list_driv"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_btn"
+        android:background="#e8e6e4" />
+
+    <LinearLayout
+        android:id="@+id/bottom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/my_task_summit_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_red"
+            android:padding="10dp"
+            android:text="提交采集点"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/my_task_close_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_gray"
+            android:padding="10dp"
+            android:text="完成任务"
+            android:textColor="#666666" />
+
+        <Button
+            android:id="@+id/my_task_btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_red"
+            android:padding="10dp"
+            android:text="全部删除"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_task_pro_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/progerss_bg"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <com.mapbar.info.collection.widget.MProgressView
+            android:id="@+id/my_task_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_progress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/my_task_progressbar"
+            android:text="20条数据载入中......"
+            android:textColor="@color/user_text_c" />
+    </RelativeLayout>
+
+</RelativeLayout>

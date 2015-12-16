@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_body_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/choice_bg_color"
+    android:orientation="vertical"
+    android:visibility="gone" 
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title"
+        android:padding="7dp" 
+        >
+
+        <LinearLayout
+            android:id="@+id/search_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/userlogin_account_bk"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/new_task_edit_search" />
+
+            <EditText
+                android:id="@+id/search_top_edit"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="请输入关键字"
+                android:singleLine="true"
+                android:textColorHint="@color/ui8_userlogin_hinttextcolor" />
+
+            <ImageView
+                android:id="@+id/search_img_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear_account" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/serarch_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/the_confirm"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/serarch_btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/the_cancle"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent" />
+
+        <com.mapbar.info.collection.widget.MyListView
+            android:id="@+id/search_result_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@color/white"
+            android:divider="@color/list_driv"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

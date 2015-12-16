@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk"
+    android:orientation="vertical"
+    android:padding="1dp" >
+
+    <ListView
+        android:id="@+id/detail_pop_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/list_driv"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

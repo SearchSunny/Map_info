@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types>
+    <name key="1">积水路段</name>
+    <name key="2">急下坡急转弯</name>
+    <name key="3">加油站加气站加水站</name>
+    <name key="4">禁止掉头转弯停车</name>
+    <name key="5">收费站及停车场</name>
+    <name key="6">道路限速</name>
+    <name key="7">易肇事及事故多发</name>
+    <name key="8">公车专用道及单行道</name>
+    <name key="9">超限路政公安检查站</name>
+    <name key="10">红灯照相固定测速照相</name>
+    <name key="11">交流道出口压线及测速</name>
+    <name key="12">雷达测速及流动测速</name>
+    <name key="13">区间测速起点及终点</name>
+    <name key="14">平均车速测速照相</name>
+    <name key="15">隧道测速照相</name>
+    <name key="16">监控照相</name>
+    <name key="17">紧急避险车道及货车专用道</name>
+    <name key="18">火车禁行及限行路段</name>
+    <name key="19">轮胎修理汽车修理</name>
+    <name key="20">货车禁行及限时通行</name>
+    <name key="21">物流公司货运市场</name>
+    <name key="22">路桥限高限重限宽</name>
+    <name key="23">大巴禁止上下客违章</name>
+    <name key="24">商用车及小车4S店</name>
+    <name key="25">集装箱堆场</name>
+    <name key="26">其它</name>
+</types>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk" >
+
+    <include
+        android:id="@+id/camera_tittle"
+        layout="@layout/layout_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/layout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_tittle"
+        android:layout_margin="10dp"
+        android:background="@drawable/camera_detail_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout01"
+            android:background="@drawable/dri_line_x" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务发起时间："
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/new_task_stime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/user_text_c" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout01"
+            android:background="@drawable/dri_line_x" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务过期时间："
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/new_task_ltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/user_text_c" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout01"
+            android:background="@drawable/dri_line_x" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务奖励金额："
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/new_task_earn_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/user_text_c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任备"
+                android:textColor="@color/text_gray"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务类型："
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/new_task_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/user_text_c" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout01"
+            android:background="@drawable/dri_line_x" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/camera_detail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/user_text_c" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout01"
+            android:background="@drawable/dri_line_x" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/camera_cut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ui8_wg_bg_dialog_btn_blue"
+        android:padding="10dp"
+        android:text="抢单"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/camarea_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/camera_bottom_teach_bg"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera_bottom_teach" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照教程,注意事项等"
+            android:textColor="@color/text_gray" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/camrea_pro_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/progerss_bg"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <com.mapbar.info.collection.widget.MProgressView
+            android:id="@+id/camrea_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_progress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/camrea_progressbar"
+            android:text="正在努力抢单...... "
+            android:textColor="@color/user_text_c" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_camera_show" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="userlogin_bk">#f5f3f2</color>
+    <color name="userlogin_account_text">#333333</color>
+    <color name="userlogin_account_hint">#9E9E9E</color>
+    <color name="userlogin_account">#ffffff</color>
+    <color name="userlogin_content">#9C9C9C</color>
+    <color name="userlogin_findpass_text">#ABABAB</color>
+    <color name="userlogin_regist_text">#6AA3D1</color>
+    <color name="blue">#3399FF</color>
+    <color name="ui8_userlogin_hinttextcolor">#B5B5B5</color>
+    <color name="user_login_top_name">#333333</color>
+    <color name="user_bottom_text_c">#e0e0e0</color>
+    <color name="user_text_c">#555555</color>
+    <color name="user_text_red">#f1584d</color>
+    <color name="choice_bg_color">#B2000000</color>
+    <color name="drivie_line">#c6c6c6</color>
+    <color name="text_gray">#888888</color>
+    <color name="text_blue">#2255b3</color>
+    <color name="list_driv">#dadada</color>
+    <color name="camera_bottom_teach">#b3b3b3</color>
+    <color name="camera_bottom_teach_bg">#fbfaf9</color>
+    <color name="green">#2255b3</color>
+    
+    <color name="gray">#C0C0C0</color>
+
+    <!-- 80%透明 -->
+    <color name="transparent_eight">#cc000000</color>
+    <!-- 60%透明 -->
+    <color name="transparent_six">#99000000</color>
+    <!-- 50%透明 -->
+    <color name="transparent_five">#7f000000</color>
+    <!-- 全透明 -->
+    <color name="transparent_all">#00000000</color>
+    <!-- 10%透明 -->
+    <color name="transparent_ten">#19000000</color>
+    <!-- 40%白色透明 -->
+    <color name="transparent_four">#66ffffff</color>
+    <!-- 90%透明 -->
+    <color name="transparent_nine">#E5000000</color>
+    
+    <color name="activecolor">#ffa700</color>
+    <color name="inactivecolor">#cfcfcf</color>
+    <color name="strokecolor">#ffa700</color>
+</resources>

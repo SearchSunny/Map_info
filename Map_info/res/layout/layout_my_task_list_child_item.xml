@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_selector" >
+
+    <CheckBox
+        android:id="@+id/my_task_list_checkbox_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/my_task_list_left"
+        android:button="@drawable/my_task_list_left"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/my_task_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/my_task_list_checkbox_child"
+        android:gravity="center"
+        android:text="fasdfasdfasdf"
+        android:textColor="@color/user_text_c"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/my_task_list_text_child_dcri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_task_list_text"
+        android:layout_below="@+id/my_task_list_text"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="fasdfasdfasdf"
+        android:textColor="@color/text_gray" />
+
+    <TextView
+        android:id="@+id/my_task_list_text_child_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="fasdfasdfasdf"
+        android:textColor="@color/text_gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

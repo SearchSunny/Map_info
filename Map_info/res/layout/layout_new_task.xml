@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk" xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/task_tittle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/new_task_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/btn_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <Button
+                android:id="@+id/new_task_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/list_tittle_left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="附近"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/new_task_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/list_tittle_right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="全部"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/new_task_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/btn_search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_tittle"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/search_top_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_tittle"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="NotSibling" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/new_task_filter_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="区域"
+                    android:textColor="@color/text_gray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/new_task_filter_all_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/filter_state_close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/drivie_line" />
+
+            <LinearLayout
+                android:id="@+id/list_all_filter_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/userlogin_bk"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/filter_all_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/filter_btn_bg_left"
+                    android:padding="5dp"
+                    android:text="按单价"
+                    android:textColor="@color/text_gray" />
+
+                <Button
+                    android:id="@+id/filter_all_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/filter_btn_bg_right"
+                    android:padding="5dp"
+                    android:text="按名称"
+                    android:textColor="@color/text_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_top_nearby"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_item_bg" >
+
+            <RelativeLayout
+                android:id="@+id/filter_task_k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/new_task_dis_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="1000"
+                        android:textColor="@color/text_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="米"
+                        android:textColor="@color/text_gray" />
+
+                    <ImageView
+                        android:id="@+id/new_task_dis_filter_mg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/filter_state_close" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/drivie_line" />
+
+            <RelativeLayout
+                android:id="@+id/filter_task_o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/new_task_filter_condation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="按名称"
+                        android:textColor="@color/text_gray" />
+
+                    <ImageView
+                        android:id="@+id/new_task_filter_condation_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/filter_state_close" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.mapbar.info.collection.widget.MyListView
+        android:id="@+id/new_task_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_top"
+        android:background="@color/userlogin_bk"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_driv"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false" />
+
+    <com.mapbar.info.collection.widget.MyListView
+        android:id="@+id/new_task_list_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_top"
+        android:background="@color/userlogin_bk"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_driv"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/choice_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_top"
+        android:background="#B2000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minWidth="300dip"
+            android:orientation="vertical" >
+
+            <!-- 1000-3000-5000 -->
+            <com.mapbar.info.collection.widget.FilterListView
+                android:id="@+id/choice_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="@null"
+                android:divider="@color/list_driv"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="none"
+                android:transcriptMode="disabled" />
+
+            <!-- 按名称-按距离-按单价 -->
+            <com.mapbar.info.collection.widget.FilterListView
+                android:id="@+id/choice_other"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null"
+                android:divider="@color/list_driv"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="none"
+                android:transcriptMode="disabled"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choice_body_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_top"
+        android:background="#B2000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minWidth="300dip"
+            android:orientation="vertical" >
+
+            <com.mapbar.info.collection.widget.FilterListView
+                android:id="@+id/choice_list_all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="@null"
+                android:divider="@color/list_driv"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="none"
+                android:transcriptMode="disabled" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_search" />
+
+</RelativeLayout>

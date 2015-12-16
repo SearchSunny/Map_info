@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/point_tittle"
+        layout="@layout/layout_titlebar" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageButton
+                android:id="@+id/the_new_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/new_task_btm" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_new_task"
+                android:gravity="center"
+                android:text="@string/the_new_task"
+                android:textColor="@color/user_text_c" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tittle_line"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/drivie_line" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageButton
+                android:id="@+id/the_my_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/new_task_btn_m" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_my_task"
+                android:gravity="center"
+                android:text="@string/the_my_task"
+                android:textColor="@color/user_text_c" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/tittle_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/drivie_line" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageButton
+                android:id="@+id/the_about_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/new_task_btm" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_about_task"
+                android:gravity="center"
+                android:text="@string/the_about_task"
+                android:textColor="@color/user_text_c" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/drivie_line" 
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" 
+            android:visibility="invisible">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/new_task_btn_m" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/the_my_task"
+                android:textColor="@color/user_text_c" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+    
+    <View
+        android:id="@+id/tittle_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/drivie_line" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" >
+    </RelativeLayout>
+
+</LinearLayout>

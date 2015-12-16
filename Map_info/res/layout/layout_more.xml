@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk"
+    android:gravity="top" >
+
+    <include
+        android:id="@+id/more_tittle"
+        android:layout_height="match_parent"
+        layout="@layout/layout_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/more_item_alter_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_tittle"
+        android:layout_margin="10dp"
+        android:background="@drawable/more_item_bg" >
+
+        <ImageView
+            android:id="@+id/more_alter_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/more_alter_pawd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/more_alter_password"
+            android:text="修改密码"
+            android:textColor="@color/user_login_top_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_item_click" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/more_alter_password" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_item_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_item_alter_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/more_item_bg"
+        >
+
+        <ImageView
+            android:id="@+id/more_new_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/more_item_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/more_new_icon"
+            android:text="拍照教程"
+            android:textColor="@color/user_login_top_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_item_click" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/more_new_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_item_request"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_item_new"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/more_item_bg" >
+
+        <ImageView
+            android:id="@+id/more_requ_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/more_item_icon_request" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/more_requ_icon"
+            android:text="热点答疑"
+            android:textColor="@color/user_login_top_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_item_click" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/more_requ_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_item_about"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_item_request"
+        android:layout_margin="10dp"
+        android:background="@drawable/more_item_bg" >
+
+        <ImageView
+            android:id="@+id/more_about_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/more_item_icon_about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/more_about_icon"
+            android:text="关于"
+            android:textColor="@color/user_login_top_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_item_click" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/more_about_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/task_bottom_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/more_btn_do_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_task"
+            android:gravity="center"
+            android:text="@string/coll_do_task"
+            android:textColor="@color/user_bottom_text_c" />
+
+        <Button
+            android:id="@+id/more_btn_user_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_user_info"
+            android:text="@string/user_info"
+            android:textColor="@color/user_bottom_text_c" />
+
+        <Button
+            android:id="@+id/more_btn_seeting_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_more"
+            android:text="@string/the_more"
+            android:textColor="@color/user_bottom_text_c" />
+    </LinearLayout>
+
+</RelativeLayout>

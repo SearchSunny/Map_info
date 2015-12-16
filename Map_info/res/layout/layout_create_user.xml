@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userlogin_bk" >
+     <include
+        android:id="@+id/point_tittle"
+        layout="@layout/layout_titlebar" >
+    </include>
+    
+
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" 
+             android:layout_below="@id/point_tittle">
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp" >
+
+                 <LinearLayout
+                     android:id="@+id/linear_usernikename"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal"
+                     >
+                     
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="用户名："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"/>
+
+                     <EditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/edit_userNikeName"
+                         android:hint="请输入手机号" 
+                         style="@style/edit_create_user"
+                         android:inputType="numberSigned"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/linear_username"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_usernikename"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" >
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="姓    名："
+                         android:textColor="@color/black"
+                         android:textSize="16dp" />
+
+                     <EditText
+                         android:id="@+id/edit_userName"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="请输入姓名" 
+                        style="@style/edit_create_user"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/linear_userpwd"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_username"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" 
+                     android:visibility="visible">
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="密    码："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"/>
+
+                     <EditText
+                         android:id="@+id/edit_userPwd"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="123456" 
+                         style="@style/edit_create_user"
+                         android:enabled="false"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/linear_useremail"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_userpwd"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" >
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="invisible"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="邮    箱："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"/>
+
+                     <EditText
+                         android:id="@+id/edit_userEmail"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="请输入邮箱" 
+                         style="@style/edit_create_user"
+                         android:inputType="textEmailAddress"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/linear_useralipay"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_useremail"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" >
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="支付宝："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"/>
+
+                     <EditText
+                         android:id="@+id/edit_userAlipay"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="请输入支付宝账号" 
+                         style="@style/edit_create_user"/>
+                 </LinearLayout>
+                 
+                 <LinearLayout
+                     android:id="@+id/linear_userphone"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_useralipay"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" >
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="手机号："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"/>
+
+                     <EditText
+                         android:id="@+id/edit_userPhone"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="请输入手机号" 
+                         android:inputType="numberSigned"
+                         style="@style/edit_create_user"/>
+                 </LinearLayout>
+                 
+                 <LinearLayout
+                     android:id="@+id/linear_userqq"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_userphone"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" >
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Q      Q："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"/>
+
+                     <EditText
+                         android:id="@+id/edit_userQQ"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="请输入QQ号" 
+                         android:inputType="numberSigned"
+                         style="@style/edit_create_user"/>
+                 </LinearLayout>
+
+                 
+                 <LinearLayout
+                     android:id="@+id/linear_usergender"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_userqq"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" 
+                     android:visibility="gone">
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"
+                        android:layout_gravity="center_vertical"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="性    别："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"
+                         android:layout_gravity="center_vertical"/>
+
+                     <Spinner android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/spiner_usergender"
+                         style="@style/edit_create_user"
+                         android:spinnerMode="dropdown"
+                         android:layout_gravity="center_vertical"/>
+                 </LinearLayout>
+                 
+                 <LinearLayout
+                     android:id="@+id/linear_usercity"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_usergender"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" >
+
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*  "
+                        android:textColor="@color/user_text_red" 
+                        android:visibility="visible"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="城    市："
+                         android:textColor="@color/black" 
+                         android:textSize="16dp"/>
+
+                     <EditText
+                         android:id="@+id/edit_userCity"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="请输入城市" 
+                         style="@style/edit_create_user"/>
+                 </LinearLayout>
+                 
+                 
+                 <LinearLayout
+                     android:id="@+id/linear_userconfirm"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/linear_usercity"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:orientation="horizontal" >
+
+                     <Button
+                         android:id="@+id/button_userConfirm"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/btn_red"
+                         android:layout_marginTop="20dp"
+                         android:padding="10dp"
+                         android:text="确  认"
+                         android:textColor="#FFFFFF"
+                         android:textSize="22dp" />
+                 </LinearLayout>
+             </RelativeLayout>
+         </ScrollView>
+</RelativeLayout>

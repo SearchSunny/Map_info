@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk" >
+
+    <include
+        android:id="@+id/user_tittle"
+        layout="@layout/layout_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/user_tittle"
+        android:background="@drawable/user_top_bg" >
+
+        <ImageButton
+            android:id="@+id/user_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/user_photo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/user_camera"
+            android:layout_alignTop="@+id/user_camera"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_camera"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColor="#FFF" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号："
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/user_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机："
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码："
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/user_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:background="#fbfaf9" >
+
+        <RelativeLayout
+            android:id="@+id/layout06"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/icon01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_all_money" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/icon01"
+                android:text="总收入"
+                android:textColor="@color/user_text_c" />
+
+            <TextView
+                android:id="@+id/user_all_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="¥"
+                android:textColor="@color/user_text_red" />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/layout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" 
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/icon011"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_all_money" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/icon011"
+                android:text="未支付金额"
+                android:textColor="@color/user_text_c" />
+
+            <TextView
+                android:id="@+id/text_user_notpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="¥"
+                android:textColor="@color/user_text_red" 
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout01"
+            android:background="@drawable/dri_line_x" />
+
+        <RelativeLayout
+            android:id="@+id/layout07"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout01"
+            android:layout_margin="10dp" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/icon02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_month_money" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/icon02"
+                android:text="当月收入"
+                android:textColor="@color/user_text_c" />
+
+            <TextView
+                android:id="@+id/user_month_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="¥"
+                android:textColor="@color/user_text_red" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout01"
+            android:layout_margin="10dp" 
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/icon021"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_month_money" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/icon021"
+                android:text="已支付金额"
+                android:textColor="@color/user_text_c" />
+
+            <TextView
+                android:id="@+id/text_user_yetpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="¥"
+                android:textColor="@color/user_text_red" 
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout02"
+            android:background="@drawable/dri_line_x" />
+
+        <RelativeLayout
+            android:id="@+id/layout03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout02"
+            android:layout_margin="10dp" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/icon03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_col_day" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/icon03"
+                android:text="采集天数"
+                android:textColor="@color/user_text_c" />
+
+            <TextView
+                android:id="@+id/user_use_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/user_text_red" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout03"
+            android:background="@drawable/dri_line_x" 
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/layout04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout03"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:id="@+id/icon04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_right_col" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/icon04"
+                android:text="有效采集"
+                android:textColor="@color/user_text_c" />
+
+            <TextView
+                android:id="@+id/user_right_coll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/user_text_red" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout04"
+            android:background="@drawable/dri_line_x" />
+
+        <RelativeLayout
+            android:id="@+id/layout05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout04"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:id="@+id/icon05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user_right_col_l" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/icon05"
+                android:text="采集通过率"
+                android:textColor="@color/user_text_c" />
+
+            <TextView
+                android:id="@+id/user_right_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/user_text_red" />
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout05"
+            android:background="@drawable/dri_line_x" />
+        
+        <RelativeLayout
+            android:id="@+id/layout08"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout05"
+            android:layout_margin="10dp" 
+            android:visibility="visible">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/user_text_red" 
+                android:text="我要结算"
+                android:id="@+id/btn_count"
+                android:textSize="16dp"/>
+            
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/layout08"
+            android:background="@drawable/dri_line_x" />
+        
+        <RelativeLayout
+            android:id="@+id/relativeCreateUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout08"
+            android:layout_margin="10dp" 
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/user_text_red" 
+                android:text="创建子账号"
+                android:id="@+id/text_CreateUser"
+                android:textSize="16dp"/>
+            
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/relativeCreateUser"
+            android:background="#c6c6c6" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/task_bottom_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/user_btn_do_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_task"
+            android:gravity="center"
+            android:text="@string/coll_do_task"
+            android:textColor="@color/user_bottom_text_c" />
+
+        <Button
+            android:id="@+id/user_btn_user_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_user_info"
+            android:text="@string/user_info"
+            android:textColor="@color/user_bottom_text_c" />
+
+        <Button
+            android:id="@+id/user_btn_seeting_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_more"
+            android:text="@string/the_more"
+            android:textColor="@color/user_bottom_text_c" />
+    </LinearLayout>
+
+</RelativeLayout>

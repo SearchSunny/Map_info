@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- 开始拍照 -->
+    <FrameLayout
+        android:id="@+id/FramePreviewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:visibility="visible">
+        
+       <SurfaceView android:id="@+id/PreviewView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+       
+       <Button
+            android:id="@+id/BtnContinue"
+            android:background="@drawable/ui8_wg_bg_dialog_btn_blue_a"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|left"
+            android:text="连续拍照"
+            android:textColor="@color/white" 
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+       
+       
+       <Button
+            android:id="@+id/BtnCamera"
+            android:background="@drawable/ui8_wg_bg_dialog_btn_blue_a"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="拍    照"
+            android:textColor="@color/white"  
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+       
+       <Button
+            android:id="@+id/BtnSingle"
+            android:background="@drawable/ui8_wg_bg_dialog_btn_blue_a"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:text="单次拍照"
+            android:textColor="@color/white"  
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+        
+    </FrameLayout>
+
+
+    <!-- 显示缩略图  -->
+    <FrameLayout
+        android:id="@+id/FrameThumbsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:visibility="gone"
+        android:background="@color/userlogin_bk">
+       
+        <ImageView android:id="@+id/ThumbsView"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   />
+        <Button
+            android:id="@+id/BtnCancel"
+            android:background="@drawable/ui8_wg_bg_dialog_btn_blue_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:text="取    消"
+            android:textColor="@color/white" 
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+        
+        <Button
+            android:id="@+id/BtnOk"
+            android:background="@drawable/btn_red_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="确    定"
+            android:textColor="@color/white"
+            android:layout_margin="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/crime_camera_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progress_indeterminate_midle"/>
+    </FrameLayout>
+
+</RelativeLayout>

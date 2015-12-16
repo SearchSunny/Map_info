@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/userlogin_bk" >
+
+    <include
+        android:id="@+id/tittle"
+        layout="@layout/layout_titlebar" />
+
+    <!-- <ImageView
+        android:id="@+id/ad_view"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tittle"
+        android:background="@drawable/user_top_bg" /> -->
+        <com.mapbar.info.collection.ad.AdNoticeView
+        android:id="@+id/ad_index_adview"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/user_top_bg"
+        android:duplicateParentState="true" 
+        android:layout_below="@id/tittle">
+      </com.mapbar.info.collection.ad.AdNoticeView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad_index_adview"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" 
+        android:id="@+id/index_layout01">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+	 <Button
+                android:id="@+id/the_my_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_task_btn_m"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_my_task"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/the_my_task" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+	<Button
+                android:id="@+id/the_about_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_task_btm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_about_task"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/the_about_task" />
+           
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+    <!-- start -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/index_layout01"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+	<Button
+                android:id="@+id/the_new_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intdex_page_cll_point" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_new_task"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/the_new_task" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" 
+            >
+
+            <Button
+                android:id="@+id/index_add_app1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intdex_page_add_app" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_add_app1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/add_app" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!-- end -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/task_bottom_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_do_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_task"
+            android:gravity="center"
+            android:text="@string/coll_do_task"
+            android:textColor="@color/user_bottom_text_c" />
+
+        <Button
+            android:id="@+id/btn_user_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_user_info"
+            android:text="@string/user_info"
+            android:textColor="@color/user_bottom_text_c" />
+
+        <Button
+            android:id="@+id/btn_seeting_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/main_index_do_more"
+            android:text="@string/the_more"
+            android:textColor="@color/user_bottom_text_c" />
+    </LinearLayout>
+
+</RelativeLayout>
